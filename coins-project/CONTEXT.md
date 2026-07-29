@@ -57,6 +57,14 @@ Bitstamp и др. ProBit — блок 403.
 networks.csv, report.html (таблица сеть × биржа). Ключи бирж задаются через
 переменные окружения (старые пары надо перевыпустить — они светились в переписке).
 
+## Тест доступности из облака (29.07.2026)
+
+Работают (HTTP 200): MEXC, Gate, HTX, KuCoin, BingX, Bitget, CoinEx, Bitmart, XT,
+Coinbase, Poloniex, Backpack, WEEX — 13 из 15.
+
+Гео-блок (считать через телефон): Binance (451), Bybit (403, CloudFront
+«block access from your country» — UA и запасной домен api.bytick.com не помогают).
+
 ## Следующий шаг
 
 Посчитать, сколько НОВЫХ уникальных монет добавят Coinbase/Poloniex/Backpack/WEEX
