@@ -42,6 +42,17 @@ XT_KEY, XT_SECRET = env("XT_KEY"), env("XT_SECRET")
 UA = {"User-Agent": "Mozilla/5.0"}
 REPORT = []
 
+# Гео-заблокированные из облака биржи можно посчитать по выгрузкам с телефона
+# (см. phone_dump.py): если в DUMP_DIR лежит соответствующий JSON, берём его.
+DUMP_DIR = os.environ.get("DUMP_DIR", "dumps")
+
+def dump(name):
+    p = os.path.join(DUMP_DIR, name)
+    if os.path.exists(p):
+        with open(p) as f:
+            return json.load(f)
+    return None
+
 def log(msg):
     print(msg)
     REPORT.append(str(msg))
@@ -157,8 +168,9 @@ def norm(s):
     return ALIAS.get(s, s)
 
 def binance():
-    data = signed_qs("https://api.binance.com/sapi/v1/capital/config/getall",
-                     B_KEY, B_SECRET, "X-MBX-APIKEY")
+    data = dump("binance_coins.json") or signed_qs(
+        "https://api.binance.com/sapi/v1/capital/config/getall",
+        B_KEY, B_SECRET, "X-MBX-APIKEY")
     return [(c["coin"].upper(), norm(n["network"]), (n.get("contractAddress") or "").lower())
             for c in data if c.get("trading")
             for n in c.get("networkList", []) if n.get("depositEnable")]
@@ -196,15 +208,21 @@ def gate():
     return out
 
 def bybit():
-    info = get("https://api.bybit.com/v5/market/instruments-info?category=spot&limit=1000")
-    trade = {s["baseCoin"].upper() for s in info["result"]["list"] if s.get("status") == "Trading"}
-    ts, recv = str(int(time.time() * 1000)), "10000"
-    sign = hmac.new(BY_SECRET.encode(), (ts + BY_KEY + recv).encode(), hashlib.sha256).hexdigest()
-    data = get("https://api.bybit.com/v5/asset/coin/query-info",
-               {"X-BAPI-API-KEY": BY_KEY, "X-BAPI-TIMESTAMP": ts,
-                "X-BAPI-RECV-WINDOW": recv, "X-BAPI-SIGN": sign})
+    mk = dump("bybit_markets.json")
+    if mk is None:
+        info = get("https://api.bybit.com/v5/market/instruments-info?category=spot&limit=1000")
+        mk = info["result"]["list"]
+    trade = {s["baseCoin"].upper() for s in mk if s.get("status") == "Trading"}
+    rows = dump("bybit_coins.json")
+    if rows is None:
+        ts, recv = str(int(time.time() * 1000)), "10000"
+        sign = hmac.new(BY_SECRET.encode(), (ts + BY_KEY + recv).encode(), hashlib.sha256).hexdigest()
+        data = get("https://api.bybit.com/v5/asset/coin/query-info",
+                   {"X-BAPI-API-KEY": BY_KEY, "X-BAPI-TIMESTAMP": ts,
+                    "X-BAPI-RECV-WINDOW": recv, "X-BAPI-SIGN": sign})
+        rows = data["result"]["rows"]
     out = []
-    for c in data["result"]["rows"]:
+    for c in rows:
         if c["coin"].upper() not in trade:
             continue
         for ch in c.get("chains", []):
@@ -306,9 +324,15 @@ def coinex():
     return out
 
 def bitmart():
-    syms = get("https://api-cloud.bitmart.com/spot/v1/symbols/details")["data"]["symbols"]
+    # Из облака (US-IP) Bitmart отдаёт обрезанный листинг (~64 пары) —
+    # полный список пар и валют кладите выгрузкой с телефона в dumps/.
+    syms = dump("bitmart_symbols.json")
+    if syms is None:
+        syms = get("https://api-cloud.bitmart.com/spot/v1/symbols/details")["data"]["symbols"]
     trade = {s["base_currency"].upper() for s in syms if s.get("trade_status") == "trading"}
-    cur = get("https://api-cloud.bitmart.com/account/v1/currencies")["data"]["currencies"]
+    cur = dump("bitmart_currencies.json")
+    if cur is None:
+        cur = get("https://api-cloud.bitmart.com/account/v1/currencies")["data"]["currencies"]
     out = []
     for c in cur:
         cid = str(c.get("currency") or c.get("id") or "")
