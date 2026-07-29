@@ -405,6 +405,14 @@ def backpack():
                         (t.get("contractAddress") or "").lower()))
     return out
 
+def cointr():
+    syms = get("https://api.cointr.com/api/v2/spot/public/symbols")["data"]
+    trade = {s["baseCoin"].upper() for s in syms if s.get("status") == "online"}
+    data = get("https://api.cointr.com/api/v2/spot/public/coins")["data"]
+    return [(c["coin"].upper(), norm(ch.get("chain")), (ch.get("contractAddress") or "").lower())
+            for c in data if c["coin"].upper() in trade
+            for ch in (c.get("chains") or []) if str(ch.get("rechargeable")).lower() == "true"]
+
 def weex():
     prods = get("https://api-spot.weex.com/api/v2/public/products")["data"]
     trade = set()
@@ -425,7 +433,7 @@ def weex():
 ORDER = [("Binance", binance), ("MEXC", mexc), ("Gate", gate), ("Bybit", bybit),
          ("HTX", htx), ("KuCoin", kucoin), ("BingX", bingx), ("Bitget", bitget),
          ("CoinEx", coinex), ("Bitmart", bitmart), ("XT", xt)]
-# ("Coinbase", coinbase), ("Poloniex", poloniex), ("Backpack", backpack), ("WEEX", weex)
+# ("Coinbase", coinbase), ("Poloniex", poloniex), ("Backpack", backpack), ("WEEX", weex), ("CoinTR", cointr)
 
 def main():
     seen = set()

@@ -79,6 +79,21 @@ Coinbase, Poloniex, Backpack, WEEX — 13 из 15.
   без Binance/MEXC/Bybit/HTX/KuCoin/BingX в базе): Coinbase 86, Poloniex 323,
   Backpack 9, WEEX 107.
 
+## Поиск новых бирж с контрактами (29.07.2026, ~30 эндпоинтов из облака)
+
+Новый подтверждённый кандидат: **CoinTR** (api.cointr.com, клон Bitget v2) —
+196 записей по критерию, 172 контракта (88%), 27 сетей. Функция cointr() в скрипте.
+
+Возможно откроются с телефона (из облака 403/502, вероятно гео/бот-блок облачного IP):
+CoinCatch (клон Bitget), KCEX и Tapbit и Biconomy (клоны MEXC).
+Ourbit (клон MEXC) — публичная часть работает из облака, кошелькового эндпоинта
+с контрактами без ключей нет; нужны ключи Ourbit, формат вероятно как у MEXC.
+
+Проверены и НЕ подходят (нет контрактов в API): BitMEX, Phemex, Pionex, Bitvavo,
+Azbit, BTSE (только имена сетей), HashKey Global (chainTypes без контрактов),
+OrangeX, Bydfi, Deepcoin (клон OKX), AscendEX (API недоступен), Hotcoin (API
+закрыт), Coinstore и Blofin (валютный эндпоинт только под авторизацией).
+
 ## Следующий шаг
 
 Посчитать, сколько НОВЫХ уникальных монет добавят Coinbase/Poloniex/Backpack/WEEX
