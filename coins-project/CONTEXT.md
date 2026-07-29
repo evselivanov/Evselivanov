@@ -94,6 +94,22 @@ Azbit, BTSE (только имена сетей), HashKey Global (chainTypes б�
 OrangeX, Bydfi, Deepcoin (клон OKX), AscendEX (API недоступен), Hotcoin (API
 закрыт), Coinstore и Blofin (валютный эндпоинт только под авторизацией).
 
+## Уникальные контракты 5 кандидатов (29.07.2026)
+
+Ключ дедупликации — (сеть, адрес контракта). В ALIAS добавлены Poloniex-префиксы
+(ETHBASE→BASE, ETHARB→ARBITRUM, ETHOP/ETHBLAST/ETHLINEA/ETHZKSYNC, ETHROB→ROBINHOOD,
+BTCMERLIN→MERLIN).
+
+Уникальных контрактов у каждого: Coinbase 363, Poloniex 669, Backpack 74,
+WEEX 365, CoinTR 172. Вместе (без дублей): **1178**.
+Каскад: Coinbase +363 → Poloniex +519 → Backpack +39 → WEEX +209 → CoinTR +48.
+Наибольшее пересечение: Coinbase∩Poloniex 150.
+
+Против публичной части базы (Gate+Bitget+CoinEx+Bitmart64+XT, 2287 контрактов)
+кандидаты дают **556 новых контрактов**: Poloniex 319, WEEX 129, Coinbase 68,
+Backpack 31, CoinTR 29. Топ сетей новых: BSC 144, SOL 144, ETH 135, BASE 52.
+Это верхняя оценка — полная база (с Binance/MEXC/Bybit/HTX/KuCoin/BingX) её уменьшит.
+
 ## Следующий шаг
 
 Посчитать, сколько НОВЫХ уникальных монет добавят Coinbase/Poloniex/Backpack/WEEX
