@@ -381,11 +381,27 @@ def backpack():
                         (t.get("contractAddress") or "").lower()))
     return out
 
+def weex():
+    prods = get("https://api-spot.weex.com/api/v2/public/products")["data"]
+    trade = set()
+    for s in prods:
+        s = s.split("_")[0].upper()
+        for q in ("USDT", "USDC", "BTC", "ETH"):
+            if s.endswith(q) and len(s) > len(q):
+                trade.add(s[:-len(q)])
+                break
+    data = get("https://api-spot.weex.com/api/v2/public/currencies")["data"]
+    return [(c["coinName"].upper(), norm(ch.get("chain")),
+             (ch.get("contractAddress") or "").lower())
+            for c in data if str(c.get("coinName") or "").upper() in trade
+            for ch in (c.get("chains") or [])
+            if str(ch.get("rechargeable")).lower() == "true"]
+
 # --- Каскад. Добавьте кандидатов в конец списка, чтобы учесть их монеты. ---
 ORDER = [("Binance", binance), ("MEXC", mexc), ("Gate", gate), ("Bybit", bybit),
          ("HTX", htx), ("KuCoin", kucoin), ("BingX", bingx), ("Bitget", bitget),
          ("CoinEx", coinex), ("Bitmart", bitmart), ("XT", xt)]
-# ("Coinbase", coinbase), ("Poloniex", poloniex), ("Backpack", backpack)
+# ("Coinbase", coinbase), ("Poloniex", poloniex), ("Backpack", backpack), ("WEEX", weex)
 
 def main():
     seen = set()

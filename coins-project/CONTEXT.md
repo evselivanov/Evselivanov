@@ -65,6 +65,20 @@ Coinbase, Poloniex, Backpack, WEEX — 13 из 15.
 Гео-блок (считать через телефон): Binance (451), Bybit (403, CloudFront
 «block access from your country» — UA и запасной домен api.bytick.com не помогают).
 
+## Проверка из облака 29.07.2026 (публичные эндпоинты)
+
+- Функции кандидатов работают; цифры с телефона (Poloniex 1102, Backpack 7236)
+  были сырыми списками БЕЗ фильтра «депозит+торги». С фильтром: Coinbase 453,
+  Poloniex 736, Backpack 74 (на споте Backpack всего 87 базовых активов).
+- **Bitmart из облака отдаёт только 64 торговые пары** (гео-обрезка листинга
+  для US-IP; кошельковый список полный — 3898). Полный подсчёт Bitmart — с телефона.
+- **WEEX**: API — клон Bitget (api-spot.weex.com/api/v2/public/...). Функция weex()
+  добавлена в скрипт: 475 записей с фильтром, 369 контрактов, 65 сетей.
+- Предварительный каскад ТОЛЬКО из публичных бирж (Gate → Bitget → CoinEx →
+  Bitmart(64) → XT → кандидаты) — новых уникальных у кандидатов (верхняя оценка,
+  без Binance/MEXC/Bybit/HTX/KuCoin/BingX в базе): Coinbase 86, Poloniex 323,
+  Backpack 9, WEEX 107.
+
 ## Следующий шаг
 
 Посчитать, сколько НОВЫХ уникальных монет добавят Coinbase/Poloniex/Backpack/WEEX
