@@ -9,15 +9,15 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 
 ```
 [Intro]
-[weary male voice alone, one acoustic guitar note, tape hiss]
+[voice alone, one guitar note]
 крестИтель христОв... проповЕдник покаЯния...
 не отвЕргни менЯ... кАющегося.
 но соединИвшись... с небЕсными сИлами...
 помолИсь владЫке за менЯ... недостОйного рабА твоегО.
-[one bar of silence]
+[silence]
 
 [Verse]
-[soft bass breath enters, half-spoken vocal]
+[bass enters]
 дрЯхлый и нЕмощный...
 во мнОгие бЕды впадАющий...
 утомлЁнный... бУрными пОмыслами умА моегО...
@@ -30,16 +30,16 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 поднЯться.
 
 [Chorus]
-[low chanted incantation, a three-note falling cello riff answers every line]
+[chant, cello riff answers]
 по-кА не зай-дЁт сОлн-це... (сОлнце...)
 по-кА не объ-Я-ла нОчь... (нОчь...)
-[stop-time: everything cuts, voice alone]
+[stop-time, voice alone]
 про-тя-нИ мне рУ-ку пО-мо-щи...
-[beat returns, voice rises on the last line, held long note]
+[beat returns, voice rises]
 под-ни-мИ ме-нЯ... из тьмЫ-Ы... (из тьмЫ...)
 
 [Verse]
-[minimal dusty beat, vinyl crackle, murmured vocal]
+[dusty beat]
 скрывАю Язвы душИ моЕй... постЫдными рУбищами грехА.
 сбИлся я с прАвого путИ... ведУщего в жИзнь...
 уклонИвшись... на путИ беззакОния...
@@ -64,7 +64,7 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 нЕт избавлЕния.
 
 [Bridge]
-[beat drops out, voice alone in deep dark space]
+[beat drops, deep space]
 увЫ мне... душА... разумЕй и вИдь... долготерпЕние бОжие...
 ибО не желАет он... смЕрти грЕшника.
 гОре мне... что приобрЁл я... за минУвшее врЕмя жИзни моЕй.
@@ -72,27 +72,26 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 я — вертЕп... всЯкого злОго дЕла...
 нЕт концА... грехОвному обЫчаю моемУ...
 Ум пригвождЁн... к земнОму.
-[one bar of silence]
+[silence]
 
 [Pre-Chorus]
-[tension rising, voice hardens, beat tightens]
+[tension rises]
 что же мне дЕлать... не знАю...
 к комУ прибЕгну... да спасенА бУдет душА моЯ...
 тОлько к тебЕ... иоАнн предтЕча...
 ибО знАю... ты бОльше всех.
-[beat cuts dead, one bar of full silence]
+[beat cuts to silence]
 
 [Chorus]
-[low chanted incantation, cello riff answers]
 по-кА не зай-дЁт сОлн-це... (сОлнце...)
 по-кА не объ-Я-ла нОчь... (нОчь...)
-[stop-time: everything cuts, voice alone]
+[stop-time, voice alone]
 про-тя-нИ мне рУ-ку пО-мо-щи...
-[beat returns, voice rises, held long note]
+[beat returns]
 под-ни-мИ ме-нЯ... из тьмЫ-Ы... (из тьмЫ...)
 
 [Bridge]
-[voice alone, acoustic guitar returns, intimate]
+[guitar returns]
 ты крестИл самогО... Агнца бОжия...
 берУщего на себЯ... грехИ всегО мИра...
 егО молИ... за убОгую... и смирЕнную дУшу моЮ.
@@ -104,10 +103,10 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 стучАщий без отвЕта...
 со светИльником... угАшенным унЫнием и лЕностью...
 и тогдА оборвЁтся... суЕтная надЕжда моЯ.
-[one bar of silence]
+[silence]
 
 [Verse]
-[a single low cello swells underneath, spoken dread, beat returns heavier]
+[cello swells, beat heavier]
 когдА всё творЕние предстАнет... пред стрАшным судИлищем христОвым...
 где открОются делА кАждого... без утАйки...
 тогдА Ангелы предстАнут со стрАхом...
@@ -115,7 +114,7 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 огОнь свирЕпый потечЁт... истреблЯя грЕшников...
 [stop-time, dry voice]
 из ко-тО-рых пЕр-вый — я.
-[cello softens, voice lighter]
+[cello softens]
 тогдА прАведники возрАдуются... преподОбные возвеселЯтся...
 дЕвственники прослАвятся... мУченики увенчАются...
 апОстолы в облакАх восхИтятся... прорОки прослАвятся...
@@ -123,17 +122,17 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 котОрые пострадАли... рАди христА... в жИзни сЕй.
 
 [Bridge]
-[darker, voice low, bass only]
+[bass only, voice low]
 чтО же сотворЮ... окаЯнный Я...
 в суетЕ окОнчив... все днИ жИзни моЕй...
 и в сквЕрных пОмыслах... провЁл гОды моИ.
 смЕрти ждУ... о грехАх же никогдА не скорбЕв...
 вЕчную мУку приобрЁл...
 и о цАрстве небЕсном... не позабОтился.
-[one bar of silence]
+[silence]
 
 [Outro]
-[only acoustic guitar, quiet litany]
+[quiet litany]
 не презрИ менЯ... проповЕдник христОв...
 чЕстный предтЕча... послЕдний прорОк...
 пЕрвый мУченик... настАвник постЯщихся...
@@ -141,19 +140,19 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 тебЯ молЮ... и к тебЕ припадАю...
 не лишИ менЯ защИты твоЕй...
 но поднимИ менЯ... убОгого... пАвшего во мнОгих грехАх.
-[beat cuts dead, one bar of full silence]
+[beat cuts to silence]
 
 [Chorus]
-[fullest moment, chant with cello, whispered echoes]
+[fullest chant, echoes]
 по-кА не зай-дЁт сОлн-це... (сОлнце...)
 по-кА не объ-Я-ла нОчь... (нОчь...)
-[stop-time: everything cuts, voice alone]
+[stop-time, voice alone]
 про-тя-нИ мне рУ-ку пО-мо-щи...
-[beat returns, voice rises, held long note]
+[beat returns, voice rises]
 под-ни-мИ ме-нЯ... из тьмЫ-Ы... (из тьмЫ...)
 об-но-вИ дУ-шу мо-Ю... по-ка-Я-ни-ем... (покаЯнием...)
 ибО покаЯние... вторОе крещЕние.
-[voice quieter, guitar only]
+[quieter]
 ибО ты начАло обОих...
 крещЕнием омывАешь... грехИ прародИтельные...
 покаЯнием очищАешь... сквЕрну душЕвную.
@@ -163,7 +162,7 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 сЕрдце нечИстое... из глубинЫ воздыхАет.
 
 [Coda]
-[all instruments gone, weary voice, dry, no reverb]
+[dry whisper, no instruments]
 спасИ менЯ от врагОв моИх...
 да не удЕржат дУшу моЮ... лукАвые бЕсы... пОсле смЕрти...
 да не скАжут онИ...
@@ -176,15 +175,15 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 
 ```
 [Intro]
-[weary male voice alone, one acoustic guitar note, tape hiss]
+[voice alone, one guitar note]
 воИстину... гОсподи мой... иисУсе христЕ...
 молИтвами святОго иоАнна... крестИтеля твоегО...
 не дАй менЯ бЕсам в рАдость...
 да не похвАлятся онИ... в рУки нАши пришЁл ты.
-[one bar of silence]
+[silence]
 
 [Verse]
-[soft bass breath enters, half-spoken vocal]
+[bass enters]
 человеколЮбец... цАрь всесИльный...
 угасИ угрОзы их...
 низложИ гордЫню их... вознесЁнную.
@@ -194,23 +193,23 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 нЕт.
 
 [Pre-Chorus]
-[tension rising, voice hardens, beat tightens]
+[tension rises]
 но уповАю... на бЕздну щедрОт твоИх...
 возвращАюсь... как блУдный сЫн...
 примИ менЯ... как одногО... из наЁмников твоИх.
-[beat cuts dead, one bar of full silence]
+[beat cuts to silence]
 
 [Chorus]
-[low chanted incantation, a three-note falling cello riff answers every line]
+[chant, cello riff answers]
 по-кА не зай-дЁт сОлн-це... (сОлнце...)
 по-кА не объ-Я-ла нОчь... (нОчь...)
-[stop-time: everything cuts, voice alone]
+[stop-time, voice alone]
 про-тя-нИ мне рУ-ку пО-мо-щи...
-[beat returns, voice rises on the last line, held long note]
+[beat returns, voice rises]
 под-ни-мИ ме-нЯ... из тьмЫ-Ы... (из тьмЫ...)
 
 [Verse]
-[minimal dusty beat, vinyl crackle, murmured vocal]
+[dusty beat]
 молЮ тебЯ... как хананЕя...
 да и я насЫщусь... как пЁс...
 крупИцами... со святОй трапЕзы твоЕй.
@@ -223,17 +222,17 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 понЁс.
 
 [Bridge]
-[beat drops out, voice alone, cello answers each line like an echo]
+[cello echoes each line]
 ты воскресИл сЫна вдовЫ... несОмого на погребЕние...
 четвероднЕвного лАзаря... из грОба воззвАл...
 слОвом слепЫм... Очи открЫл...
 и кровоточИвую исцелИл... прикосновЕнием к одЕжде своЕй...
 и разбОйника... в одИн час исповЕдавшегося...
 прИнял... и рАй ему даровАл.
-[one bar of silence]
+[silence]
 
 [Verse]
-[a single low cello swells underneath, spoken, intimate]
+[cello swells, intimate]
 ты нЫне, гОсподи... примИ исповЕдь моЮ...
 подАй мне любОвь своЮ...
 да проведУ Этот послЕдний дЕнь... угОдно тебЕ.
@@ -246,7 +245,7 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 и полумЁртвым остАвили менЯ... отчАянием одержИмого.
 
 [Bridge]
-[cello and guitar together, intensity rising slowly]
+[cello and guitar rise]
 сАм же, гОсподи... как самарЯнин...
 возьмИ менЯ на ослА своегО...
 принесИ менЯ в гостИницу... в святУю твоЮ цЕрковь...
@@ -256,30 +255,30 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 и истребИ сквЕрну... мнОгих грехОв моИх...
 и дарУй исцелЕние... душЕ моЕй и тЕлу...
 да и на мнЕ Явится... мИлость твоЯ.
-[one bar of silence]
+[silence]
 
 [Outro]
-[only acoustic guitar, quiet litany]
+[quiet litany]
 примИ молЯщегося за нАс... чЕстного предтЕчу...
 крестИтеля твоегО иоАнна...
 и пречИстую мАтерь твоЮ... владЫчицу нАшу богорОдицу.
 спасИ менЯ... грЕшного рабА твоегО...
 кАющегося... в грехАх своИх.
-[beat cuts dead, one bar of full silence]
+[beat cuts to silence]
 
 [Chorus]
-[fullest moment, chant with cello, whispered echoes]
+[fullest chant, echoes]
 по-кА не зай-дЁт сОлн-це... (сОлнце...)
 по-кА не объ-Я-ла нОчь... (нОчь...)
-[stop-time: everything cuts, voice alone]
+[stop-time, voice alone]
 про-тя-нИ мне рУ-ку пО-мо-щи...
-[beat returns, voice rises, held long note]
+[beat returns, voice rises]
 под-ни-мИ ме-нЯ... из тьмЫ-Ы... (из тьмЫ...)
 об-но-вИ дУ-шу мо-Ю... по-ка-Я-ни-ем... (покаЯнием...)
 ибО покаЯние... вторОе крещЕние.
 
 [Coda]
-[all instruments gone, weary voice, dry, no reverb]
+[dry whisper, no instruments]
 ты ведь бОг кАющихся...
 и на тебЯ... спасИтеля нАшего... возложИли мы надЕжду...
 слАвя пресвятОе Имя твоЁ...
