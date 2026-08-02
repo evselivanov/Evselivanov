@@ -36,7 +36,7 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 [stop-time, voice alone]
 про-тя-нИ мне рУ-ку пО-мо-щи...
 [beat returns, voice rises]
-под-ни-мИ ме-нЯ... из тьмЫ-Ы... (из тьмЫ...)
+под-ни-мИ ме-нЯ... из тьмЫ... (из тьмЫ...)
 
 [Verse]
 [dusty beat]
@@ -88,7 +88,7 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 [stop-time, voice alone]
 про-тя-нИ мне рУ-ку пО-мо-щи...
 [beat returns]
-под-ни-мИ ме-нЯ... из тьмЫ-Ы... (из тьмЫ...)
+под-ни-мИ ме-нЯ... из тьмЫ... (из тьмЫ...)
 
 [Bridge]
 [guitar returns]
@@ -149,7 +149,7 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 [stop-time, voice alone]
 про-тя-нИ мне рУ-ку пО-мо-щи...
 [beat returns, voice rises]
-под-ни-мИ ме-нЯ... из тьмЫ-Ы... (из тьмЫ...)
+под-ни-мИ ме-нЯ... из тьмЫ... (из тьмЫ...)
 об-но-вИ дУ-шу мо-Ю... по-ка-Я-ни-ем... (покаЯнием...)
 ибО покаЯние... вторОе крещЕние.
 [quieter]
@@ -206,7 +206,7 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 [stop-time, voice alone]
 про-тя-нИ мне рУ-ку пО-мо-щи...
 [beat returns, voice rises]
-под-ни-мИ ме-нЯ... из тьмЫ-Ы... (из тьмЫ...)
+под-ни-мИ ме-нЯ... из тьмЫ... (из тьмЫ...)
 
 [Verse]
 [dusty beat]
@@ -273,7 +273,7 @@ Male, Weirdness 40, Style Influence 80, Audio Influence 50, Duration Auto. Тр�
 [stop-time, voice alone]
 про-тя-нИ мне рУ-ку пО-мо-щи...
 [beat returns, voice rises]
-под-ни-мИ ме-нЯ... из тьмЫ-Ы... (из тьмЫ...)
+под-ни-мИ ме-нЯ... из тьмЫ... (из тьмЫ...)
 об-но-вИ дУ-шу мо-Ю... по-ка-Я-ни-ем... (покаЯнием...)
 ибО покаЯние... вторОе крещЕние.
 

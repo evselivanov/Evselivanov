@@ -49,7 +49,7 @@
 [stop-time: everything cuts, voice alone]
 про-тя-нИ мне рУ-ку пО-мо-щи...
 [beat returns, voice rises on the last line, held long note]
-под-ни-мИ ме-нЯ... из тьмЫ-Ы... (из тьмЫ...)
+под-ни-мИ ме-нЯ... из тьмЫ... (из тьмЫ...)
 
 [Verse]
 [minimal dusty beat, vinyl crackle filling the gaps, murmured vocal]
@@ -109,7 +109,7 @@
 [stop-time: everything cuts, voice alone]
 про-тя-нИ мне рУ-ку пО-мо-щи...
 [beat returns, voice rises, held long note]
-под-ни-мИ ме-нЯ... из тьмЫ-Ы... (из тьмЫ...)
+под-ни-мИ ме-нЯ... из тьмЫ... (из тьмЫ...)
 об-но-вИ дУ-шу мо-Ю... по-ка-Я-ни-ем... (покаЯнием...)
 ибО покаЯние... вторОе крещЕние.
 
