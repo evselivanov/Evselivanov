@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔐</text></svg>">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="app-page">
+  <header class="topbar">
+    <div class="topbar__brand">
+      <span class="logo">🔐</span>
+      <strong>Личный кабинет</strong>
+    </div>
+    <div class="topbar__user">
+      <span id="who" class="muted"></span>
+      <button id="logout" class="ghost-btn">Выйти</button>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="hero">
+      <h1>Привет, <span id="display-name">пользователь</span> 👋</h1>
+      <p class="muted">Вы вошли под своим логином. Это ваше личное пространство.</p>
+    </section>
+
+    <section class="grid">
+      <article class="tile">
+        <h2>📝 Заметки</h2>
+        <p class="muted small">Быстрые заметки сохраняются в этом браузере.</p>
+        <textarea id="notes" class="notes" placeholder="Пишите здесь…"></textarea>
+        <p id="notes-status" class="muted small">Сохранено автоматически.</p>
+      </article>
+
+      <article class="tile">
+        <h2>🔗 Быстрые ссылки</h2>
+        <ul class="links">
+          <li><a href="https://github.com/evselivanov" target="_blank" rel="noopener">Мой GitHub</a></li>
+          <li><a href="mailto:eksel1313@gmail.com">Написать мне</a></li>
+        </ul>
+      </article>
+
+      <article class="tile">
+        <h2>ℹ️ Сессия</h2>
+        <p class="muted small">Вход выполнен: <span id="login-time">—</span></p>
+        <p class="muted small">Хранение: <span id="storage-kind">—</span></p>
+      </article>
+    </section>
+  </main>
+
+  <script src="assets/config.js"></script>
+  <script src="assets/auth.js"></script>
+  <script src="assets/dashboard.js"></script>
+</body>
+</html>

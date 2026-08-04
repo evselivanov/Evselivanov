@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход · Личный кабинет</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔐</text></svg>">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="auth-page">
+  <main class="card" role="main">
+    <div class="card__brand">
+      <span class="logo">🔐</span>
+      <h1>Личный кабинет</h1>
+      <p class="muted">Войдите под своим логином, чтобы продолжить</p>
+    </div>
+
+    <form id="login-form" class="form" autocomplete="on" novalidate>
+      <label class="field">
+        <span class="field__label">Логин</span>
+        <input id="username" name="username" type="text" inputmode="text"
+               autocomplete="username" required autofocus placeholder="Ваш логин">
+      </label>
+
+      <label class="field">
+        <span class="field__label">Пароль</span>
+        <span class="field__password">
+          <input id="password" name="password" type="password"
+                 autocomplete="current-password" required placeholder="Ваш пароль">
+          <button type="button" id="toggle-password" class="ghost-btn"
+                  aria-label="Показать пароль">👁</button>
+        </span>
+      </label>
+
+      <label class="field field--row">
+        <input id="remember" name="remember" type="checkbox">
+        <span>Запомнить меня на этом устройстве</span>
+      </label>
+
+      <p id="error" class="error" role="alert" hidden></p>
+
+      <button type="submit" class="primary-btn">Войти</button>
+    </form>
+
+    <p class="muted small">
+      Сайт работает локально на вашем ПК. Данные для входа хранятся только
+      в вашем браузере и не отправляются в сеть.
+    </p>
+  </main>
+
+  <script src="assets/config.js"></script>
+  <script src="assets/auth.js"></script>
+  <script src="assets/login.js"></script>
+</body>
+</html>
